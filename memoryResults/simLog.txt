@@ -1,0 +1,582 @@
+----- NEW SIMULATION LOG -----
+LOG: Starting Config setup
+LOG: Set up configs for the following configurations
+LOG: --num_iq_entries: 16, --num_rob_entries: 32, --lq_entries: 4, --sq_entries: 4, --fetch_buffer_size: 64, --fetch_queue_size: 4, --fetch_width: 1, --decode_width: 1, --rename_width: 1, --dispatch_width: 1, --issue_width: 1, --commit_width: 1, --fu_pool: basic, 
+LOG: --num_iq_entries: 16, --num_rob_entries: 32, --lq_entries: 16, --sq_entries: 16, --fetch_buffer_size: 64, --fetch_queue_size: 4, --fetch_width: 1, --decode_width: 1, --rename_width: 1, --dispatch_width: 1, --issue_width: 1, --commit_width: 1, --fu_pool: basic, 
+LOG: --num_iq_entries: 16, --num_rob_entries: 32, --lq_entries: 32, --sq_entries: 32, --fetch_buffer_size: 64, --fetch_queue_size: 4, --fetch_width: 1, --decode_width: 1, --rename_width: 1, --dispatch_width: 1, --issue_width: 1, --commit_width: 1, --fu_pool: basic, 
+LOG: --num_iq_entries: 32, --num_rob_entries: 64, --lq_entries: 4, --sq_entries: 4, --fetch_buffer_size: 64, --fetch_queue_size: 4, --fetch_width: 1, --decode_width: 1, --rename_width: 1, --dispatch_width: 1, --issue_width: 1, --commit_width: 1, --fu_pool: basic, 
+LOG: --num_iq_entries: 32, --num_rob_entries: 64, --lq_entries: 16, --sq_entries: 16, --fetch_buffer_size: 64, --fetch_queue_size: 4, --fetch_width: 1, --decode_width: 1, --rename_width: 1, --dispatch_width: 1, --issue_width: 1, --commit_width: 1, --fu_pool: basic, 
+LOG: --num_iq_entries: 32, --num_rob_entries: 64, --lq_entries: 32, --sq_entries: 32, --fetch_buffer_size: 64, --fetch_queue_size: 4, --fetch_width: 1, --decode_width: 1, --rename_width: 1, --dispatch_width: 1, --issue_width: 1, --commit_width: 1, --fu_pool: basic, 
+LOG: --num_iq_entries: 64, --num_rob_entries: 128, --lq_entries: 4, --sq_entries: 4, --fetch_buffer_size: 64, --fetch_queue_size: 4, --fetch_width: 1, --decode_width: 1, --rename_width: 1, --dispatch_width: 1, --issue_width: 1, --commit_width: 1, --fu_pool: basic, 
+LOG: --num_iq_entries: 64, --num_rob_entries: 128, --lq_entries: 16, --sq_entries: 16, --fetch_buffer_size: 64, --fetch_queue_size: 4, --fetch_width: 1, --decode_width: 1, --rename_width: 1, --dispatch_width: 1, --issue_width: 1, --commit_width: 1, --fu_pool: basic, 
+LOG: --num_iq_entries: 64, --num_rob_entries: 128, --lq_entries: 32, --sq_entries: 32, --fetch_buffer_size: 64, --fetch_queue_size: 4, --fetch_width: 1, --decode_width: 1, --rename_width: 1, --dispatch_width: 1, --issue_width: 1, --commit_width: 1, --fu_pool: basic, 
+LOG: Over benchmarks
+LOG: basicmath, bitcounts, qsort, susan_edges, susan_smoothing, susan_corners, jpeg_encode, jpeg_decode, dijkstra, 
+LOG: RUNNING SIMULATION - basicmath - at basicmath-1-1-1-64-4-1-basic-1-4-16-32-1-4.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 16 --num_rob_entries 32 --lq_entries 4 --sq_entries 4 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic basicmath
+LOG: FINISHED SIMULATION - basicmath - at basicmath-1-1-1-64-4-1-basic-1-4-16-32-1-4.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename basicmath-1-1-1-64-4-1-basic-1-4-16-32-1-4.txt
+LOG: RUNNING SIMULATION - bitcounts - at bitcounts-1-1-1-64-4-1-basic-1-4-16-32-1-4.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 16 --num_rob_entries 32 --lq_entries 4 --sq_entries 4 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic bitcounts
+LOG: FINISHED SIMULATION - bitcounts - at bitcounts-1-1-1-64-4-1-basic-1-4-16-32-1-4.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename bitcounts-1-1-1-64-4-1-basic-1-4-16-32-1-4.txt
+LOG: RUNNING SIMULATION - qsort - at qsort-1-1-1-64-4-1-basic-1-4-16-32-1-4.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 16 --num_rob_entries 32 --lq_entries 4 --sq_entries 4 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic qsort
+LOG: FINISHED SIMULATION - qsort - at qsort-1-1-1-64-4-1-basic-1-4-16-32-1-4.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename qsort-1-1-1-64-4-1-basic-1-4-16-32-1-4.txt
+LOG: RUNNING SIMULATION - susan_edges - at susan_edges-1-1-1-64-4-1-basic-1-4-16-32-1-4.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 16 --num_rob_entries 32 --lq_entries 4 --sq_entries 4 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic susan_edges
+LOG: FINISHED SIMULATION - susan_edges - at susan_edges-1-1-1-64-4-1-basic-1-4-16-32-1-4.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename susan_edges-1-1-1-64-4-1-basic-1-4-16-32-1-4.txt
+LOG: RUNNING SIMULATION - susan_smoothing - at susan_smoothing-1-1-1-64-4-1-basic-1-4-16-32-1-4.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 16 --num_rob_entries 32 --lq_entries 4 --sq_entries 4 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic susan_smoothing
+LOG: FINISHED SIMULATION - susan_smoothing - at susan_smoothing-1-1-1-64-4-1-basic-1-4-16-32-1-4.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename susan_smoothing-1-1-1-64-4-1-basic-1-4-16-32-1-4.txt
+LOG: RUNNING SIMULATION - susan_corners - at susan_corners-1-1-1-64-4-1-basic-1-4-16-32-1-4.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 16 --num_rob_entries 32 --lq_entries 4 --sq_entries 4 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic susan_corners
+LOG: FINISHED SIMULATION - susan_corners - at susan_corners-1-1-1-64-4-1-basic-1-4-16-32-1-4.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename susan_corners-1-1-1-64-4-1-basic-1-4-16-32-1-4.txt
+LOG: RUNNING SIMULATION - jpeg_encode - at jpeg_encode-1-1-1-64-4-1-basic-1-4-16-32-1-4.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 16 --num_rob_entries 32 --lq_entries 4 --sq_entries 4 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic jpeg_encode
+LOG: FINISHED SIMULATION - jpeg_encode - at jpeg_encode-1-1-1-64-4-1-basic-1-4-16-32-1-4.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename jpeg_encode-1-1-1-64-4-1-basic-1-4-16-32-1-4.txt
+LOG: RUNNING SIMULATION - jpeg_decode - at jpeg_decode-1-1-1-64-4-1-basic-1-4-16-32-1-4.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 16 --num_rob_entries 32 --lq_entries 4 --sq_entries 4 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic jpeg_decode
+LOG: FINISHED SIMULATION - jpeg_decode - at jpeg_decode-1-1-1-64-4-1-basic-1-4-16-32-1-4.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename jpeg_decode-1-1-1-64-4-1-basic-1-4-16-32-1-4.txt
+LOG: RUNNING SIMULATION - dijkstra - at dijkstra-1-1-1-64-4-1-basic-1-4-16-32-1-4.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 16 --num_rob_entries 32 --lq_entries 4 --sq_entries 4 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic dijkstra
+LOG: FINISHED SIMULATION - dijkstra - at dijkstra-1-1-1-64-4-1-basic-1-4-16-32-1-4.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename dijkstra-1-1-1-64-4-1-basic-1-4-16-32-1-4.txt
+LOG: RUNNING SIMULATION - basicmath - at basicmath-1-1-1-64-4-1-basic-1-16-16-32-1-16.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 16 --num_rob_entries 32 --lq_entries 16 --sq_entries 16 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic basicmath
+LOG: FINISHED SIMULATION - basicmath - at basicmath-1-1-1-64-4-1-basic-1-16-16-32-1-16.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename basicmath-1-1-1-64-4-1-basic-1-16-16-32-1-16.txt
+LOG: RUNNING SIMULATION - bitcounts - at bitcounts-1-1-1-64-4-1-basic-1-16-16-32-1-16.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 16 --num_rob_entries 32 --lq_entries 16 --sq_entries 16 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic bitcounts
+LOG: FINISHED SIMULATION - bitcounts - at bitcounts-1-1-1-64-4-1-basic-1-16-16-32-1-16.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename bitcounts-1-1-1-64-4-1-basic-1-16-16-32-1-16.txt
+LOG: RUNNING SIMULATION - qsort - at qsort-1-1-1-64-4-1-basic-1-16-16-32-1-16.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 16 --num_rob_entries 32 --lq_entries 16 --sq_entries 16 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic qsort
+LOG: FINISHED SIMULATION - qsort - at qsort-1-1-1-64-4-1-basic-1-16-16-32-1-16.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename qsort-1-1-1-64-4-1-basic-1-16-16-32-1-16.txt
+LOG: RUNNING SIMULATION - susan_edges - at susan_edges-1-1-1-64-4-1-basic-1-16-16-32-1-16.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 16 --num_rob_entries 32 --lq_entries 16 --sq_entries 16 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic susan_edges
+LOG: FINISHED SIMULATION - susan_edges - at susan_edges-1-1-1-64-4-1-basic-1-16-16-32-1-16.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename susan_edges-1-1-1-64-4-1-basic-1-16-16-32-1-16.txt
+LOG: RUNNING SIMULATION - susan_smoothing - at susan_smoothing-1-1-1-64-4-1-basic-1-16-16-32-1-16.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 16 --num_rob_entries 32 --lq_entries 16 --sq_entries 16 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic susan_smoothing
+LOG: FINISHED SIMULATION - susan_smoothing - at susan_smoothing-1-1-1-64-4-1-basic-1-16-16-32-1-16.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename susan_smoothing-1-1-1-64-4-1-basic-1-16-16-32-1-16.txt
+LOG: RUNNING SIMULATION - susan_corners - at susan_corners-1-1-1-64-4-1-basic-1-16-16-32-1-16.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 16 --num_rob_entries 32 --lq_entries 16 --sq_entries 16 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic susan_corners
+LOG: FINISHED SIMULATION - susan_corners - at susan_corners-1-1-1-64-4-1-basic-1-16-16-32-1-16.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename susan_corners-1-1-1-64-4-1-basic-1-16-16-32-1-16.txt
+LOG: RUNNING SIMULATION - jpeg_encode - at jpeg_encode-1-1-1-64-4-1-basic-1-16-16-32-1-16.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 16 --num_rob_entries 32 --lq_entries 16 --sq_entries 16 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic jpeg_encode
+LOG: FINISHED SIMULATION - jpeg_encode - at jpeg_encode-1-1-1-64-4-1-basic-1-16-16-32-1-16.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename jpeg_encode-1-1-1-64-4-1-basic-1-16-16-32-1-16.txt
+LOG: RUNNING SIMULATION - jpeg_decode - at jpeg_decode-1-1-1-64-4-1-basic-1-16-16-32-1-16.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 16 --num_rob_entries 32 --lq_entries 16 --sq_entries 16 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic jpeg_decode
+LOG: FINISHED SIMULATION - jpeg_decode - at jpeg_decode-1-1-1-64-4-1-basic-1-16-16-32-1-16.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename jpeg_decode-1-1-1-64-4-1-basic-1-16-16-32-1-16.txt
+LOG: RUNNING SIMULATION - dijkstra - at dijkstra-1-1-1-64-4-1-basic-1-16-16-32-1-16.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 16 --num_rob_entries 32 --lq_entries 16 --sq_entries 16 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic dijkstra
+LOG: FINISHED SIMULATION - dijkstra - at dijkstra-1-1-1-64-4-1-basic-1-16-16-32-1-16.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename dijkstra-1-1-1-64-4-1-basic-1-16-16-32-1-16.txt
+LOG: RUNNING SIMULATION - basicmath - at basicmath-1-1-1-64-4-1-basic-1-32-16-32-1-32.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 16 --num_rob_entries 32 --lq_entries 32 --sq_entries 32 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic basicmath
+LOG: FINISHED SIMULATION - basicmath - at basicmath-1-1-1-64-4-1-basic-1-32-16-32-1-32.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename basicmath-1-1-1-64-4-1-basic-1-32-16-32-1-32.txt
+LOG: RUNNING SIMULATION - bitcounts - at bitcounts-1-1-1-64-4-1-basic-1-32-16-32-1-32.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 16 --num_rob_entries 32 --lq_entries 32 --sq_entries 32 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic bitcounts
+LOG: FINISHED SIMULATION - bitcounts - at bitcounts-1-1-1-64-4-1-basic-1-32-16-32-1-32.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename bitcounts-1-1-1-64-4-1-basic-1-32-16-32-1-32.txt
+LOG: RUNNING SIMULATION - qsort - at qsort-1-1-1-64-4-1-basic-1-32-16-32-1-32.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 16 --num_rob_entries 32 --lq_entries 32 --sq_entries 32 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic qsort
+LOG: FINISHED SIMULATION - qsort - at qsort-1-1-1-64-4-1-basic-1-32-16-32-1-32.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename qsort-1-1-1-64-4-1-basic-1-32-16-32-1-32.txt
+LOG: RUNNING SIMULATION - susan_edges - at susan_edges-1-1-1-64-4-1-basic-1-32-16-32-1-32.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 16 --num_rob_entries 32 --lq_entries 32 --sq_entries 32 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic susan_edges
+LOG: FINISHED SIMULATION - susan_edges - at susan_edges-1-1-1-64-4-1-basic-1-32-16-32-1-32.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename susan_edges-1-1-1-64-4-1-basic-1-32-16-32-1-32.txt
+LOG: RUNNING SIMULATION - susan_smoothing - at susan_smoothing-1-1-1-64-4-1-basic-1-32-16-32-1-32.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 16 --num_rob_entries 32 --lq_entries 32 --sq_entries 32 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic susan_smoothing
+LOG: FINISHED SIMULATION - susan_smoothing - at susan_smoothing-1-1-1-64-4-1-basic-1-32-16-32-1-32.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename susan_smoothing-1-1-1-64-4-1-basic-1-32-16-32-1-32.txt
+LOG: RUNNING SIMULATION - susan_corners - at susan_corners-1-1-1-64-4-1-basic-1-32-16-32-1-32.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 16 --num_rob_entries 32 --lq_entries 32 --sq_entries 32 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic susan_corners
+LOG: FINISHED SIMULATION - susan_corners - at susan_corners-1-1-1-64-4-1-basic-1-32-16-32-1-32.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename susan_corners-1-1-1-64-4-1-basic-1-32-16-32-1-32.txt
+LOG: RUNNING SIMULATION - jpeg_encode - at jpeg_encode-1-1-1-64-4-1-basic-1-32-16-32-1-32.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 16 --num_rob_entries 32 --lq_entries 32 --sq_entries 32 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic jpeg_encode
+LOG: FINISHED SIMULATION - jpeg_encode - at jpeg_encode-1-1-1-64-4-1-basic-1-32-16-32-1-32.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename jpeg_encode-1-1-1-64-4-1-basic-1-32-16-32-1-32.txt
+LOG: RUNNING SIMULATION - jpeg_decode - at jpeg_decode-1-1-1-64-4-1-basic-1-32-16-32-1-32.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 16 --num_rob_entries 32 --lq_entries 32 --sq_entries 32 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic jpeg_decode
+LOG: FINISHED SIMULATION - jpeg_decode - at jpeg_decode-1-1-1-64-4-1-basic-1-32-16-32-1-32.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename jpeg_decode-1-1-1-64-4-1-basic-1-32-16-32-1-32.txt
+LOG: RUNNING SIMULATION - dijkstra - at dijkstra-1-1-1-64-4-1-basic-1-32-16-32-1-32.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 16 --num_rob_entries 32 --lq_entries 32 --sq_entries 32 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic dijkstra
+LOG: FINISHED SIMULATION - dijkstra - at dijkstra-1-1-1-64-4-1-basic-1-32-16-32-1-32.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename dijkstra-1-1-1-64-4-1-basic-1-32-16-32-1-32.txt
+LOG: RUNNING SIMULATION - basicmath - at basicmath-1-1-1-64-4-1-basic-1-4-32-64-1-4.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 32 --num_rob_entries 64 --lq_entries 4 --sq_entries 4 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic basicmath
+LOG: FINISHED SIMULATION - basicmath - at basicmath-1-1-1-64-4-1-basic-1-4-32-64-1-4.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename basicmath-1-1-1-64-4-1-basic-1-4-32-64-1-4.txt
+LOG: RUNNING SIMULATION - bitcounts - at bitcounts-1-1-1-64-4-1-basic-1-4-32-64-1-4.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 32 --num_rob_entries 64 --lq_entries 4 --sq_entries 4 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic bitcounts
+LOG: FINISHED SIMULATION - bitcounts - at bitcounts-1-1-1-64-4-1-basic-1-4-32-64-1-4.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename bitcounts-1-1-1-64-4-1-basic-1-4-32-64-1-4.txt
+LOG: RUNNING SIMULATION - qsort - at qsort-1-1-1-64-4-1-basic-1-4-32-64-1-4.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 32 --num_rob_entries 64 --lq_entries 4 --sq_entries 4 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic qsort
+LOG: FINISHED SIMULATION - qsort - at qsort-1-1-1-64-4-1-basic-1-4-32-64-1-4.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename qsort-1-1-1-64-4-1-basic-1-4-32-64-1-4.txt
+LOG: RUNNING SIMULATION - susan_edges - at susan_edges-1-1-1-64-4-1-basic-1-4-32-64-1-4.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 32 --num_rob_entries 64 --lq_entries 4 --sq_entries 4 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic susan_edges
+LOG: FINISHED SIMULATION - susan_edges - at susan_edges-1-1-1-64-4-1-basic-1-4-32-64-1-4.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename susan_edges-1-1-1-64-4-1-basic-1-4-32-64-1-4.txt
+LOG: RUNNING SIMULATION - susan_smoothing - at susan_smoothing-1-1-1-64-4-1-basic-1-4-32-64-1-4.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 32 --num_rob_entries 64 --lq_entries 4 --sq_entries 4 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic susan_smoothing
+LOG: FINISHED SIMULATION - susan_smoothing - at susan_smoothing-1-1-1-64-4-1-basic-1-4-32-64-1-4.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename susan_smoothing-1-1-1-64-4-1-basic-1-4-32-64-1-4.txt
+LOG: RUNNING SIMULATION - susan_corners - at susan_corners-1-1-1-64-4-1-basic-1-4-32-64-1-4.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 32 --num_rob_entries 64 --lq_entries 4 --sq_entries 4 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic susan_corners
+LOG: FINISHED SIMULATION - susan_corners - at susan_corners-1-1-1-64-4-1-basic-1-4-32-64-1-4.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename susan_corners-1-1-1-64-4-1-basic-1-4-32-64-1-4.txt
+LOG: RUNNING SIMULATION - jpeg_encode - at jpeg_encode-1-1-1-64-4-1-basic-1-4-32-64-1-4.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 32 --num_rob_entries 64 --lq_entries 4 --sq_entries 4 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic jpeg_encode
+LOG: FINISHED SIMULATION - jpeg_encode - at jpeg_encode-1-1-1-64-4-1-basic-1-4-32-64-1-4.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename jpeg_encode-1-1-1-64-4-1-basic-1-4-32-64-1-4.txt
+LOG: RUNNING SIMULATION - jpeg_decode - at jpeg_decode-1-1-1-64-4-1-basic-1-4-32-64-1-4.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 32 --num_rob_entries 64 --lq_entries 4 --sq_entries 4 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic jpeg_decode
+LOG: FINISHED SIMULATION - jpeg_decode - at jpeg_decode-1-1-1-64-4-1-basic-1-4-32-64-1-4.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename jpeg_decode-1-1-1-64-4-1-basic-1-4-32-64-1-4.txt
+LOG: RUNNING SIMULATION - dijkstra - at dijkstra-1-1-1-64-4-1-basic-1-4-32-64-1-4.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 32 --num_rob_entries 64 --lq_entries 4 --sq_entries 4 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic dijkstra
+LOG: FINISHED SIMULATION - dijkstra - at dijkstra-1-1-1-64-4-1-basic-1-4-32-64-1-4.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename dijkstra-1-1-1-64-4-1-basic-1-4-32-64-1-4.txt
+LOG: RUNNING SIMULATION - basicmath - at basicmath-1-1-1-64-4-1-basic-1-16-32-64-1-16.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 32 --num_rob_entries 64 --lq_entries 16 --sq_entries 16 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic basicmath
+LOG: FINISHED SIMULATION - basicmath - at basicmath-1-1-1-64-4-1-basic-1-16-32-64-1-16.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename basicmath-1-1-1-64-4-1-basic-1-16-32-64-1-16.txt
+LOG: RUNNING SIMULATION - bitcounts - at bitcounts-1-1-1-64-4-1-basic-1-16-32-64-1-16.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 32 --num_rob_entries 64 --lq_entries 16 --sq_entries 16 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic bitcounts
+LOG: FINISHED SIMULATION - bitcounts - at bitcounts-1-1-1-64-4-1-basic-1-16-32-64-1-16.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename bitcounts-1-1-1-64-4-1-basic-1-16-32-64-1-16.txt
+LOG: RUNNING SIMULATION - qsort - at qsort-1-1-1-64-4-1-basic-1-16-32-64-1-16.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 32 --num_rob_entries 64 --lq_entries 16 --sq_entries 16 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic qsort
+LOG: FINISHED SIMULATION - qsort - at qsort-1-1-1-64-4-1-basic-1-16-32-64-1-16.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename qsort-1-1-1-64-4-1-basic-1-16-32-64-1-16.txt
+LOG: RUNNING SIMULATION - susan_edges - at susan_edges-1-1-1-64-4-1-basic-1-16-32-64-1-16.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 32 --num_rob_entries 64 --lq_entries 16 --sq_entries 16 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic susan_edges
+LOG: FINISHED SIMULATION - susan_edges - at susan_edges-1-1-1-64-4-1-basic-1-16-32-64-1-16.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename susan_edges-1-1-1-64-4-1-basic-1-16-32-64-1-16.txt
+LOG: RUNNING SIMULATION - susan_smoothing - at susan_smoothing-1-1-1-64-4-1-basic-1-16-32-64-1-16.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 32 --num_rob_entries 64 --lq_entries 16 --sq_entries 16 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic susan_smoothing
+LOG: FINISHED SIMULATION - susan_smoothing - at susan_smoothing-1-1-1-64-4-1-basic-1-16-32-64-1-16.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename susan_smoothing-1-1-1-64-4-1-basic-1-16-32-64-1-16.txt
+LOG: RUNNING SIMULATION - susan_corners - at susan_corners-1-1-1-64-4-1-basic-1-16-32-64-1-16.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 32 --num_rob_entries 64 --lq_entries 16 --sq_entries 16 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic susan_corners
+LOG: FINISHED SIMULATION - susan_corners - at susan_corners-1-1-1-64-4-1-basic-1-16-32-64-1-16.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename susan_corners-1-1-1-64-4-1-basic-1-16-32-64-1-16.txt
+LOG: RUNNING SIMULATION - jpeg_encode - at jpeg_encode-1-1-1-64-4-1-basic-1-16-32-64-1-16.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 32 --num_rob_entries 64 --lq_entries 16 --sq_entries 16 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic jpeg_encode
+LOG: FINISHED SIMULATION - jpeg_encode - at jpeg_encode-1-1-1-64-4-1-basic-1-16-32-64-1-16.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename jpeg_encode-1-1-1-64-4-1-basic-1-16-32-64-1-16.txt
+LOG: RUNNING SIMULATION - jpeg_decode - at jpeg_decode-1-1-1-64-4-1-basic-1-16-32-64-1-16.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 32 --num_rob_entries 64 --lq_entries 16 --sq_entries 16 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic jpeg_decode
+LOG: FINISHED SIMULATION - jpeg_decode - at jpeg_decode-1-1-1-64-4-1-basic-1-16-32-64-1-16.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename jpeg_decode-1-1-1-64-4-1-basic-1-16-32-64-1-16.txt
+LOG: RUNNING SIMULATION - dijkstra - at dijkstra-1-1-1-64-4-1-basic-1-16-32-64-1-16.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 32 --num_rob_entries 64 --lq_entries 16 --sq_entries 16 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic dijkstra
+LOG: FINISHED SIMULATION - dijkstra - at dijkstra-1-1-1-64-4-1-basic-1-16-32-64-1-16.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename dijkstra-1-1-1-64-4-1-basic-1-16-32-64-1-16.txt
+LOG: RUNNING SIMULATION - basicmath - at basicmath-1-1-1-64-4-1-basic-1-32-32-64-1-32.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 32 --num_rob_entries 64 --lq_entries 32 --sq_entries 32 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic basicmath
+LOG: FINISHED SIMULATION - basicmath - at basicmath-1-1-1-64-4-1-basic-1-32-32-64-1-32.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename basicmath-1-1-1-64-4-1-basic-1-32-32-64-1-32.txt
+LOG: RUNNING SIMULATION - bitcounts - at bitcounts-1-1-1-64-4-1-basic-1-32-32-64-1-32.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 32 --num_rob_entries 64 --lq_entries 32 --sq_entries 32 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic bitcounts
+LOG: FINISHED SIMULATION - bitcounts - at bitcounts-1-1-1-64-4-1-basic-1-32-32-64-1-32.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename bitcounts-1-1-1-64-4-1-basic-1-32-32-64-1-32.txt
+LOG: RUNNING SIMULATION - qsort - at qsort-1-1-1-64-4-1-basic-1-32-32-64-1-32.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 32 --num_rob_entries 64 --lq_entries 32 --sq_entries 32 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic qsort
+LOG: FINISHED SIMULATION - qsort - at qsort-1-1-1-64-4-1-basic-1-32-32-64-1-32.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename qsort-1-1-1-64-4-1-basic-1-32-32-64-1-32.txt
+LOG: RUNNING SIMULATION - susan_edges - at susan_edges-1-1-1-64-4-1-basic-1-32-32-64-1-32.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 32 --num_rob_entries 64 --lq_entries 32 --sq_entries 32 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic susan_edges
+LOG: FINISHED SIMULATION - susan_edges - at susan_edges-1-1-1-64-4-1-basic-1-32-32-64-1-32.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename susan_edges-1-1-1-64-4-1-basic-1-32-32-64-1-32.txt
+LOG: RUNNING SIMULATION - susan_smoothing - at susan_smoothing-1-1-1-64-4-1-basic-1-32-32-64-1-32.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 32 --num_rob_entries 64 --lq_entries 32 --sq_entries 32 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic susan_smoothing
+LOG: FINISHED SIMULATION - susan_smoothing - at susan_smoothing-1-1-1-64-4-1-basic-1-32-32-64-1-32.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename susan_smoothing-1-1-1-64-4-1-basic-1-32-32-64-1-32.txt
+LOG: RUNNING SIMULATION - susan_corners - at susan_corners-1-1-1-64-4-1-basic-1-32-32-64-1-32.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 32 --num_rob_entries 64 --lq_entries 32 --sq_entries 32 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic susan_corners
+LOG: FINISHED SIMULATION - susan_corners - at susan_corners-1-1-1-64-4-1-basic-1-32-32-64-1-32.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename susan_corners-1-1-1-64-4-1-basic-1-32-32-64-1-32.txt
+LOG: RUNNING SIMULATION - jpeg_encode - at jpeg_encode-1-1-1-64-4-1-basic-1-32-32-64-1-32.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 32 --num_rob_entries 64 --lq_entries 32 --sq_entries 32 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic jpeg_encode
+LOG: FINISHED SIMULATION - jpeg_encode - at jpeg_encode-1-1-1-64-4-1-basic-1-32-32-64-1-32.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename jpeg_encode-1-1-1-64-4-1-basic-1-32-32-64-1-32.txt
+LOG: RUNNING SIMULATION - jpeg_decode - at jpeg_decode-1-1-1-64-4-1-basic-1-32-32-64-1-32.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 32 --num_rob_entries 64 --lq_entries 32 --sq_entries 32 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic jpeg_decode
+LOG: FINISHED SIMULATION - jpeg_decode - at jpeg_decode-1-1-1-64-4-1-basic-1-32-32-64-1-32.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename jpeg_decode-1-1-1-64-4-1-basic-1-32-32-64-1-32.txt
+LOG: RUNNING SIMULATION - dijkstra - at dijkstra-1-1-1-64-4-1-basic-1-32-32-64-1-32.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 32 --num_rob_entries 64 --lq_entries 32 --sq_entries 32 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic dijkstra
+LOG: FINISHED SIMULATION - dijkstra - at dijkstra-1-1-1-64-4-1-basic-1-32-32-64-1-32.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename dijkstra-1-1-1-64-4-1-basic-1-32-32-64-1-32.txt
+LOG: RUNNING SIMULATION - basicmath - at basicmath-1-1-1-64-4-1-basic-1-4-64-128-1-4.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 64 --num_rob_entries 128 --lq_entries 4 --sq_entries 4 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic basicmath
+LOG: FINISHED SIMULATION - basicmath - at basicmath-1-1-1-64-4-1-basic-1-4-64-128-1-4.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename basicmath-1-1-1-64-4-1-basic-1-4-64-128-1-4.txt
+LOG: RUNNING SIMULATION - bitcounts - at bitcounts-1-1-1-64-4-1-basic-1-4-64-128-1-4.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 64 --num_rob_entries 128 --lq_entries 4 --sq_entries 4 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic bitcounts
+LOG: FINISHED SIMULATION - bitcounts - at bitcounts-1-1-1-64-4-1-basic-1-4-64-128-1-4.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename bitcounts-1-1-1-64-4-1-basic-1-4-64-128-1-4.txt
+LOG: RUNNING SIMULATION - qsort - at qsort-1-1-1-64-4-1-basic-1-4-64-128-1-4.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 64 --num_rob_entries 128 --lq_entries 4 --sq_entries 4 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic qsort
+LOG: FINISHED SIMULATION - qsort - at qsort-1-1-1-64-4-1-basic-1-4-64-128-1-4.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename qsort-1-1-1-64-4-1-basic-1-4-64-128-1-4.txt
+LOG: RUNNING SIMULATION - susan_edges - at susan_edges-1-1-1-64-4-1-basic-1-4-64-128-1-4.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 64 --num_rob_entries 128 --lq_entries 4 --sq_entries 4 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic susan_edges
+LOG: FINISHED SIMULATION - susan_edges - at susan_edges-1-1-1-64-4-1-basic-1-4-64-128-1-4.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename susan_edges-1-1-1-64-4-1-basic-1-4-64-128-1-4.txt
+LOG: RUNNING SIMULATION - susan_smoothing - at susan_smoothing-1-1-1-64-4-1-basic-1-4-64-128-1-4.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 64 --num_rob_entries 128 --lq_entries 4 --sq_entries 4 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic susan_smoothing
+LOG: FINISHED SIMULATION - susan_smoothing - at susan_smoothing-1-1-1-64-4-1-basic-1-4-64-128-1-4.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename susan_smoothing-1-1-1-64-4-1-basic-1-4-64-128-1-4.txt
+LOG: RUNNING SIMULATION - susan_corners - at susan_corners-1-1-1-64-4-1-basic-1-4-64-128-1-4.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 64 --num_rob_entries 128 --lq_entries 4 --sq_entries 4 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic susan_corners
+LOG: FINISHED SIMULATION - susan_corners - at susan_corners-1-1-1-64-4-1-basic-1-4-64-128-1-4.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename susan_corners-1-1-1-64-4-1-basic-1-4-64-128-1-4.txt
+LOG: RUNNING SIMULATION - jpeg_encode - at jpeg_encode-1-1-1-64-4-1-basic-1-4-64-128-1-4.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 64 --num_rob_entries 128 --lq_entries 4 --sq_entries 4 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic jpeg_encode
+LOG: FINISHED SIMULATION - jpeg_encode - at jpeg_encode-1-1-1-64-4-1-basic-1-4-64-128-1-4.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename jpeg_encode-1-1-1-64-4-1-basic-1-4-64-128-1-4.txt
+LOG: RUNNING SIMULATION - jpeg_decode - at jpeg_decode-1-1-1-64-4-1-basic-1-4-64-128-1-4.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 64 --num_rob_entries 128 --lq_entries 4 --sq_entries 4 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic jpeg_decode
+LOG: FINISHED SIMULATION - jpeg_decode - at jpeg_decode-1-1-1-64-4-1-basic-1-4-64-128-1-4.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename jpeg_decode-1-1-1-64-4-1-basic-1-4-64-128-1-4.txt
+LOG: RUNNING SIMULATION - dijkstra - at dijkstra-1-1-1-64-4-1-basic-1-4-64-128-1-4.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 64 --num_rob_entries 128 --lq_entries 4 --sq_entries 4 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic dijkstra
+LOG: FINISHED SIMULATION - dijkstra - at dijkstra-1-1-1-64-4-1-basic-1-4-64-128-1-4.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename dijkstra-1-1-1-64-4-1-basic-1-4-64-128-1-4.txt
+LOG: RUNNING SIMULATION - basicmath - at basicmath-1-1-1-64-4-1-basic-1-16-64-128-1-16.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 64 --num_rob_entries 128 --lq_entries 16 --sq_entries 16 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic basicmath
+LOG: FINISHED SIMULATION - basicmath - at basicmath-1-1-1-64-4-1-basic-1-16-64-128-1-16.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename basicmath-1-1-1-64-4-1-basic-1-16-64-128-1-16.txt
+LOG: RUNNING SIMULATION - bitcounts - at bitcounts-1-1-1-64-4-1-basic-1-16-64-128-1-16.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 64 --num_rob_entries 128 --lq_entries 16 --sq_entries 16 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic bitcounts
+LOG: FINISHED SIMULATION - bitcounts - at bitcounts-1-1-1-64-4-1-basic-1-16-64-128-1-16.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename bitcounts-1-1-1-64-4-1-basic-1-16-64-128-1-16.txt
+LOG: RUNNING SIMULATION - qsort - at qsort-1-1-1-64-4-1-basic-1-16-64-128-1-16.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 64 --num_rob_entries 128 --lq_entries 16 --sq_entries 16 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic qsort
+LOG: FINISHED SIMULATION - qsort - at qsort-1-1-1-64-4-1-basic-1-16-64-128-1-16.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename qsort-1-1-1-64-4-1-basic-1-16-64-128-1-16.txt
+LOG: RUNNING SIMULATION - susan_edges - at susan_edges-1-1-1-64-4-1-basic-1-16-64-128-1-16.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 64 --num_rob_entries 128 --lq_entries 16 --sq_entries 16 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic susan_edges
+LOG: FINISHED SIMULATION - susan_edges - at susan_edges-1-1-1-64-4-1-basic-1-16-64-128-1-16.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename susan_edges-1-1-1-64-4-1-basic-1-16-64-128-1-16.txt
+LOG: RUNNING SIMULATION - susan_smoothing - at susan_smoothing-1-1-1-64-4-1-basic-1-16-64-128-1-16.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 64 --num_rob_entries 128 --lq_entries 16 --sq_entries 16 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic susan_smoothing
+LOG: FINISHED SIMULATION - susan_smoothing - at susan_smoothing-1-1-1-64-4-1-basic-1-16-64-128-1-16.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename susan_smoothing-1-1-1-64-4-1-basic-1-16-64-128-1-16.txt
+LOG: RUNNING SIMULATION - susan_corners - at susan_corners-1-1-1-64-4-1-basic-1-16-64-128-1-16.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 64 --num_rob_entries 128 --lq_entries 16 --sq_entries 16 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic susan_corners
+LOG: FINISHED SIMULATION - susan_corners - at susan_corners-1-1-1-64-4-1-basic-1-16-64-128-1-16.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename susan_corners-1-1-1-64-4-1-basic-1-16-64-128-1-16.txt
+LOG: RUNNING SIMULATION - jpeg_encode - at jpeg_encode-1-1-1-64-4-1-basic-1-16-64-128-1-16.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 64 --num_rob_entries 128 --lq_entries 16 --sq_entries 16 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic jpeg_encode
+LOG: FINISHED SIMULATION - jpeg_encode - at jpeg_encode-1-1-1-64-4-1-basic-1-16-64-128-1-16.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename jpeg_encode-1-1-1-64-4-1-basic-1-16-64-128-1-16.txt
+LOG: RUNNING SIMULATION - jpeg_decode - at jpeg_decode-1-1-1-64-4-1-basic-1-16-64-128-1-16.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 64 --num_rob_entries 128 --lq_entries 16 --sq_entries 16 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic jpeg_decode
+LOG: FINISHED SIMULATION - jpeg_decode - at jpeg_decode-1-1-1-64-4-1-basic-1-16-64-128-1-16.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename jpeg_decode-1-1-1-64-4-1-basic-1-16-64-128-1-16.txt
+LOG: RUNNING SIMULATION - dijkstra - at dijkstra-1-1-1-64-4-1-basic-1-16-64-128-1-16.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 64 --num_rob_entries 128 --lq_entries 16 --sq_entries 16 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic dijkstra
+LOG: FINISHED SIMULATION - dijkstra - at dijkstra-1-1-1-64-4-1-basic-1-16-64-128-1-16.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename dijkstra-1-1-1-64-4-1-basic-1-16-64-128-1-16.txt
+LOG: RUNNING SIMULATION - basicmath - at basicmath-1-1-1-64-4-1-basic-1-32-64-128-1-32.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 64 --num_rob_entries 128 --lq_entries 32 --sq_entries 32 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic basicmath
+LOG: FINISHED SIMULATION - basicmath - at basicmath-1-1-1-64-4-1-basic-1-32-64-128-1-32.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename basicmath-1-1-1-64-4-1-basic-1-32-64-128-1-32.txt
+LOG: RUNNING SIMULATION - bitcounts - at bitcounts-1-1-1-64-4-1-basic-1-32-64-128-1-32.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 64 --num_rob_entries 128 --lq_entries 32 --sq_entries 32 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic bitcounts
+LOG: FINISHED SIMULATION - bitcounts - at bitcounts-1-1-1-64-4-1-basic-1-32-64-128-1-32.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename bitcounts-1-1-1-64-4-1-basic-1-32-64-128-1-32.txt
+LOG: RUNNING SIMULATION - qsort - at qsort-1-1-1-64-4-1-basic-1-32-64-128-1-32.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 64 --num_rob_entries 128 --lq_entries 32 --sq_entries 32 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic qsort
+LOG: FINISHED SIMULATION - qsort - at qsort-1-1-1-64-4-1-basic-1-32-64-128-1-32.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename qsort-1-1-1-64-4-1-basic-1-32-64-128-1-32.txt
+LOG: RUNNING SIMULATION - susan_edges - at susan_edges-1-1-1-64-4-1-basic-1-32-64-128-1-32.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 64 --num_rob_entries 128 --lq_entries 32 --sq_entries 32 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic susan_edges
+LOG: FINISHED SIMULATION - susan_edges - at susan_edges-1-1-1-64-4-1-basic-1-32-64-128-1-32.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename susan_edges-1-1-1-64-4-1-basic-1-32-64-128-1-32.txt
+LOG: RUNNING SIMULATION - susan_smoothing - at susan_smoothing-1-1-1-64-4-1-basic-1-32-64-128-1-32.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 64 --num_rob_entries 128 --lq_entries 32 --sq_entries 32 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic susan_smoothing
+LOG: FINISHED SIMULATION - susan_smoothing - at susan_smoothing-1-1-1-64-4-1-basic-1-32-64-128-1-32.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename susan_smoothing-1-1-1-64-4-1-basic-1-32-64-128-1-32.txt
+LOG: RUNNING SIMULATION - susan_corners - at susan_corners-1-1-1-64-4-1-basic-1-32-64-128-1-32.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 64 --num_rob_entries 128 --lq_entries 32 --sq_entries 32 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic susan_corners
+LOG: FINISHED SIMULATION - susan_corners - at susan_corners-1-1-1-64-4-1-basic-1-32-64-128-1-32.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename susan_corners-1-1-1-64-4-1-basic-1-32-64-128-1-32.txt
+LOG: RUNNING SIMULATION - jpeg_encode - at jpeg_encode-1-1-1-64-4-1-basic-1-32-64-128-1-32.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 64 --num_rob_entries 128 --lq_entries 32 --sq_entries 32 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic jpeg_encode
+LOG: FINISHED SIMULATION - jpeg_encode - at jpeg_encode-1-1-1-64-4-1-basic-1-32-64-128-1-32.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename jpeg_encode-1-1-1-64-4-1-basic-1-32-64-128-1-32.txt
+LOG: RUNNING SIMULATION - jpeg_decode - at jpeg_decode-1-1-1-64-4-1-basic-1-32-64-128-1-32.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 64 --num_rob_entries 128 --lq_entries 32 --sq_entries 32 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic jpeg_decode
+LOG: FINISHED SIMULATION - jpeg_decode - at jpeg_decode-1-1-1-64-4-1-basic-1-32-64-128-1-32.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename jpeg_decode-1-1-1-64-4-1-basic-1-32-64-128-1-32.txt
+LOG: RUNNING SIMULATION - dijkstra - at dijkstra-1-1-1-64-4-1-basic-1-32-64-128-1-32.txt
+LOG: COMMAND - /u/csc368h/fall/pub/bin/gem5-X86.opt /u/csc368h/fall/pub/scripts/a3_part4.py --num_iq_entries 64 --num_rob_entries 128 --lq_entries 32 --sq_entries 32 --fetch_buffer_size 64 --fetch_queue_size 4 --fetch_width 1 --decode_width 1 --rename_width 1 --dispatch_width 1 --issue_width 1 --commit_width 1 --fu_pool basic dijkstra
+LOG: FINISHED SIMULATION - dijkstra - at dijkstra-1-1-1-64-4-1-basic-1-32-64-128-1-32.txt
+LOG: Waiting for ./m5out to appear...
+LOG: Found ./m5out, copying results...
+LOG: Copied stats.txt to ./results with filename dijkstra-1-1-1-64-4-1-basic-1-32-64-128-1-32.txt
+LOG: SIMULATION RUN OVERVIEW
+LOG: basicmath-1-1-1-64-4-1-basic-1-4-16-32-1-4.txt Simulation Completed, Stats file found
+LOG: bitcounts-1-1-1-64-4-1-basic-1-4-16-32-1-4.txt Simulation Completed, Stats file found
+LOG: qsort-1-1-1-64-4-1-basic-1-4-16-32-1-4.txt Simulation Completed, Stats file found
+LOG: susan_edges-1-1-1-64-4-1-basic-1-4-16-32-1-4.txt Simulation Completed, Stats file found
+LOG: susan_smoothing-1-1-1-64-4-1-basic-1-4-16-32-1-4.txt Simulation Completed, Stats file found
+LOG: susan_corners-1-1-1-64-4-1-basic-1-4-16-32-1-4.txt Simulation Completed, Stats file found
+LOG: jpeg_encode-1-1-1-64-4-1-basic-1-4-16-32-1-4.txt Simulation Completed, Stats file found
+LOG: jpeg_decode-1-1-1-64-4-1-basic-1-4-16-32-1-4.txt Simulation Completed, Stats file found
+LOG: dijkstra-1-1-1-64-4-1-basic-1-4-16-32-1-4.txt Simulation Completed, Stats file found
+LOG: basicmath-1-1-1-64-4-1-basic-1-16-16-32-1-16.txt Simulation Completed, Stats file found
+LOG: bitcounts-1-1-1-64-4-1-basic-1-16-16-32-1-16.txt Simulation Completed, Stats file found
+LOG: qsort-1-1-1-64-4-1-basic-1-16-16-32-1-16.txt Simulation Completed, Stats file found
+LOG: susan_edges-1-1-1-64-4-1-basic-1-16-16-32-1-16.txt Simulation Completed, Stats file found
+LOG: susan_smoothing-1-1-1-64-4-1-basic-1-16-16-32-1-16.txt Simulation Completed, Stats file found
+LOG: susan_corners-1-1-1-64-4-1-basic-1-16-16-32-1-16.txt Simulation Completed, Stats file found
+LOG: jpeg_encode-1-1-1-64-4-1-basic-1-16-16-32-1-16.txt Simulation Completed, Stats file found
+LOG: jpeg_decode-1-1-1-64-4-1-basic-1-16-16-32-1-16.txt Simulation Completed, Stats file found
+LOG: dijkstra-1-1-1-64-4-1-basic-1-16-16-32-1-16.txt Simulation Completed, Stats file found
+LOG: basicmath-1-1-1-64-4-1-basic-1-32-16-32-1-32.txt Simulation Completed, Stats file found
+LOG: bitcounts-1-1-1-64-4-1-basic-1-32-16-32-1-32.txt Simulation Completed, Stats file found
+LOG: qsort-1-1-1-64-4-1-basic-1-32-16-32-1-32.txt Simulation Completed, Stats file found
+LOG: susan_edges-1-1-1-64-4-1-basic-1-32-16-32-1-32.txt Simulation Completed, Stats file found
+LOG: susan_smoothing-1-1-1-64-4-1-basic-1-32-16-32-1-32.txt Simulation Completed, Stats file found
+LOG: susan_corners-1-1-1-64-4-1-basic-1-32-16-32-1-32.txt Simulation Completed, Stats file found
+LOG: jpeg_encode-1-1-1-64-4-1-basic-1-32-16-32-1-32.txt Simulation Completed, Stats file found
+LOG: jpeg_decode-1-1-1-64-4-1-basic-1-32-16-32-1-32.txt Simulation Completed, Stats file found
+LOG: dijkstra-1-1-1-64-4-1-basic-1-32-16-32-1-32.txt Simulation Completed, Stats file found
+LOG: basicmath-1-1-1-64-4-1-basic-1-4-32-64-1-4.txt Simulation Completed, Stats file found
+LOG: bitcounts-1-1-1-64-4-1-basic-1-4-32-64-1-4.txt Simulation Completed, Stats file found
+LOG: qsort-1-1-1-64-4-1-basic-1-4-32-64-1-4.txt Simulation Completed, Stats file found
+LOG: susan_edges-1-1-1-64-4-1-basic-1-4-32-64-1-4.txt Simulation Completed, Stats file found
+LOG: susan_smoothing-1-1-1-64-4-1-basic-1-4-32-64-1-4.txt Simulation Completed, Stats file found
+LOG: susan_corners-1-1-1-64-4-1-basic-1-4-32-64-1-4.txt Simulation Completed, Stats file found
+LOG: jpeg_encode-1-1-1-64-4-1-basic-1-4-32-64-1-4.txt Simulation Completed, Stats file found
+LOG: jpeg_decode-1-1-1-64-4-1-basic-1-4-32-64-1-4.txt Simulation Completed, Stats file found
+LOG: dijkstra-1-1-1-64-4-1-basic-1-4-32-64-1-4.txt Simulation Completed, Stats file found
+LOG: basicmath-1-1-1-64-4-1-basic-1-16-32-64-1-16.txt Simulation Completed, Stats file found
+LOG: bitcounts-1-1-1-64-4-1-basic-1-16-32-64-1-16.txt Simulation Completed, Stats file found
+LOG: qsort-1-1-1-64-4-1-basic-1-16-32-64-1-16.txt Simulation Completed, Stats file found
+LOG: susan_edges-1-1-1-64-4-1-basic-1-16-32-64-1-16.txt Simulation Completed, Stats file found
+LOG: susan_smoothing-1-1-1-64-4-1-basic-1-16-32-64-1-16.txt Simulation Completed, Stats file found
+LOG: susan_corners-1-1-1-64-4-1-basic-1-16-32-64-1-16.txt Simulation Completed, Stats file found
+LOG: jpeg_encode-1-1-1-64-4-1-basic-1-16-32-64-1-16.txt Simulation Completed, Stats file found
+LOG: jpeg_decode-1-1-1-64-4-1-basic-1-16-32-64-1-16.txt Simulation Completed, Stats file found
+LOG: dijkstra-1-1-1-64-4-1-basic-1-16-32-64-1-16.txt Simulation Completed, Stats file found
+LOG: basicmath-1-1-1-64-4-1-basic-1-32-32-64-1-32.txt Simulation Completed, Stats file found
+LOG: bitcounts-1-1-1-64-4-1-basic-1-32-32-64-1-32.txt Simulation Completed, Stats file found
+LOG: qsort-1-1-1-64-4-1-basic-1-32-32-64-1-32.txt Simulation Completed, Stats file found
+LOG: susan_edges-1-1-1-64-4-1-basic-1-32-32-64-1-32.txt Simulation Completed, Stats file found
+LOG: susan_smoothing-1-1-1-64-4-1-basic-1-32-32-64-1-32.txt Simulation Completed, Stats file found
+LOG: susan_corners-1-1-1-64-4-1-basic-1-32-32-64-1-32.txt Simulation Completed, Stats file found
+LOG: jpeg_encode-1-1-1-64-4-1-basic-1-32-32-64-1-32.txt Simulation Completed, Stats file found
+LOG: jpeg_decode-1-1-1-64-4-1-basic-1-32-32-64-1-32.txt Simulation Completed, Stats file found
+LOG: dijkstra-1-1-1-64-4-1-basic-1-32-32-64-1-32.txt Simulation Completed, Stats file found
+LOG: basicmath-1-1-1-64-4-1-basic-1-4-64-128-1-4.txt Simulation Completed, Stats file found
+LOG: bitcounts-1-1-1-64-4-1-basic-1-4-64-128-1-4.txt Simulation Completed, Stats file found
+LOG: qsort-1-1-1-64-4-1-basic-1-4-64-128-1-4.txt Simulation Completed, Stats file found
+LOG: susan_edges-1-1-1-64-4-1-basic-1-4-64-128-1-4.txt Simulation Completed, Stats file found
+LOG: susan_smoothing-1-1-1-64-4-1-basic-1-4-64-128-1-4.txt Simulation Completed, Stats file found
+LOG: susan_corners-1-1-1-64-4-1-basic-1-4-64-128-1-4.txt Simulation Completed, Stats file found
+LOG: jpeg_encode-1-1-1-64-4-1-basic-1-4-64-128-1-4.txt Simulation Completed, Stats file found
+LOG: jpeg_decode-1-1-1-64-4-1-basic-1-4-64-128-1-4.txt Simulation Completed, Stats file found
+LOG: dijkstra-1-1-1-64-4-1-basic-1-4-64-128-1-4.txt Simulation Completed, Stats file found
+LOG: basicmath-1-1-1-64-4-1-basic-1-16-64-128-1-16.txt Simulation Completed, Stats file found
+LOG: bitcounts-1-1-1-64-4-1-basic-1-16-64-128-1-16.txt Simulation Completed, Stats file found
+LOG: qsort-1-1-1-64-4-1-basic-1-16-64-128-1-16.txt Simulation Completed, Stats file found
+LOG: susan_edges-1-1-1-64-4-1-basic-1-16-64-128-1-16.txt Simulation Completed, Stats file found
+LOG: susan_smoothing-1-1-1-64-4-1-basic-1-16-64-128-1-16.txt Simulation Completed, Stats file found
+LOG: susan_corners-1-1-1-64-4-1-basic-1-16-64-128-1-16.txt Simulation Completed, Stats file found
+LOG: jpeg_encode-1-1-1-64-4-1-basic-1-16-64-128-1-16.txt Simulation Completed, Stats file found
+LOG: jpeg_decode-1-1-1-64-4-1-basic-1-16-64-128-1-16.txt Simulation Completed, Stats file found
+LOG: dijkstra-1-1-1-64-4-1-basic-1-16-64-128-1-16.txt Simulation Completed, Stats file found
+LOG: basicmath-1-1-1-64-4-1-basic-1-32-64-128-1-32.txt Simulation Completed, Stats file found
+LOG: bitcounts-1-1-1-64-4-1-basic-1-32-64-128-1-32.txt Simulation Completed, Stats file found
+LOG: qsort-1-1-1-64-4-1-basic-1-32-64-128-1-32.txt Simulation Completed, Stats file found
+LOG: susan_edges-1-1-1-64-4-1-basic-1-32-64-128-1-32.txt Simulation Completed, Stats file found
+LOG: susan_smoothing-1-1-1-64-4-1-basic-1-32-64-128-1-32.txt Simulation Completed, Stats file found
+LOG: susan_corners-1-1-1-64-4-1-basic-1-32-64-128-1-32.txt Simulation Completed, Stats file found
+LOG: jpeg_encode-1-1-1-64-4-1-basic-1-32-64-128-1-32.txt Simulation Completed, Stats file found
+LOG: jpeg_decode-1-1-1-64-4-1-basic-1-32-64-128-1-32.txt Simulation Completed, Stats file found
+LOG: dijkstra-1-1-1-64-4-1-basic-1-32-64-128-1-32.txt Simulation Completed, Stats file found
