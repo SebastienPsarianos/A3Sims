@@ -1,0 +1,59 @@
+Configuration 1 (Cost 320):
+    --commit_width: 1
+    --decode_width: 1
+    --dispatch_width: 1
+    --fetch_buffer_size: 64
+    --fetch_queue_size: 4
+    --fetch_width: 1
+    --fu_pool: basic
+    --issue_width: 1
+    --lq_entries: 4
+    --num_iq_entries: 16
+    --num_rob_entries: 32
+    --rename_width: 1
+    --sq_entries: 4
+
+Configuration 2 (Cost 530):
+    --commit_width: 2
+    --decode_width: 2
+    --dispatch_width: 2
+    --fetch_buffer_size: 64
+    --fetch_queue_size: 4
+    --fetch_width: 2
+    --fu_pool: basic
+    --issue_width: 2
+    --lq_entries: 4
+    --num_iq_entries: 16
+    --num_rob_entries: 32
+    --rename_width: 2
+    --sq_entries: 4
+
+Configuration 3 (Cost 540):
+    --commit_width: 1
+    --decode_width: 1
+    --dispatch_width: 1
+    --fetch_buffer_size: 64
+    --fetch_queue_size: 64
+    --fetch_width: 1
+    --fu_pool: basic
+    --issue_width: 1
+    --lq_entries: 4
+    --num_iq_entries: 16
+    --num_rob_entries: 32
+    --rename_width: 1
+    --sq_entries: 4
+
+Configuration 4 (Cost 750):
+    --commit_width: 2
+    --decode_width: 2
+    --dispatch_width: 2
+    --fetch_buffer_size: 64
+    --fetch_queue_size: 64
+    --fetch_width: 2
+    --fu_pool: basic
+    --issue_width: 2
+    --lq_entries: 4
+    --num_iq_entries: 16
+    --num_rob_entries: 32
+    --rename_width: 2
+    --sq_entries: 4
