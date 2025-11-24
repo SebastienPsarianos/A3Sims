@@ -1,4 +1,4 @@
-Configuration 1 (Cost 320):
+Config 1 (Cost 320):
     --commit_width: 1
     --decode_width: 1
     --dispatch_width: 1
@@ -13,7 +13,7 @@ Configuration 1 (Cost 320):
     --rename_width: 1
     --sq_entries: 4
 
-Configuration 2 (Cost 430):
+Config 2 (Cost 430):
     --commit_width: 1
     --decode_width: 1
     --dispatch_width: 1
@@ -28,7 +28,7 @@ Configuration 2 (Cost 430):
     --rename_width: 1
     --sq_entries: 4
 
-Configuration 3 (Cost 440):
+Config 3 (Cost 440):
     --commit_width: 1
     --decode_width: 1
     --dispatch_width: 1
@@ -43,7 +43,7 @@ Configuration 3 (Cost 440):
     --rename_width: 1
     --sq_entries: 16
 
-Configuration 4 (Cost 550):
+Config 4 (Cost 550):
     --commit_width: 1
     --decode_width: 1
     --dispatch_width: 1
@@ -58,7 +58,7 @@ Configuration 4 (Cost 550):
     --rename_width: 1
     --sq_entries: 16
 
-Configuration 5 (Cost 580):
+Config 5 (Cost 580):
     --commit_width: 1
     --decode_width: 1
     --dispatch_width: 1
@@ -73,7 +73,7 @@ Configuration 5 (Cost 580):
     --rename_width: 1
     --sq_entries: 32
 
-Configuration 6 (Cost 670):
+Config 6 (Cost 670):
     --commit_width: 1
     --decode_width: 1
     --dispatch_width: 1
@@ -88,7 +88,7 @@ Configuration 6 (Cost 670):
     --rename_width: 1
     --sq_entries: 4
 
-Configuration 7 (Cost 690):
+Config 7 (Cost 690):
     --commit_width: 1
     --decode_width: 1
     --dispatch_width: 1
@@ -103,7 +103,7 @@ Configuration 7 (Cost 690):
     --rename_width: 1
     --sq_entries: 32
 
-Configuration 8 (Cost 790):
+Config 8 (Cost 790):
     --commit_width: 1
     --decode_width: 1
     --dispatch_width: 1
@@ -118,7 +118,7 @@ Configuration 8 (Cost 790):
     --rename_width: 1
     --sq_entries: 16
 
-Configuration 9 (Cost 930):
+Config 9 (Cost 930):
     --commit_width: 1
     --decode_width: 1
     --dispatch_width: 1

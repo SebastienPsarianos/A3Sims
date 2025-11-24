@@ -3,6 +3,22 @@ from parseStats import process_file
 from pathlib import Path
 import matplotlib.pyplot as plt
 
+defaultCpuParameters = {
+    "--fetch_buffer_size": "64",
+    "--fetch_queue_size": "4",
+    "--fetch_width": "1",
+    "--decode_width": "1",
+    "--rename_width": "1",
+    "--dispatch_width": "1",
+    "--issue_width": "1",
+    "--commit_width": "1",
+    "--num_iq_entries": "16",
+    "--num_rob_entries": "32",
+    "--lq_entries": "4",
+    "--sq_entries": "4",
+    "--fu_pool": "basic"
+}
+
 
 BENCHMARKS = [
     "basicmath",
@@ -107,6 +123,30 @@ COST_LOOKUP = {
 }
 
 
+def generateDiffLabel(config: Dict[str, str]) -> str:
+    """
+    Generates a label string containing only parameters that differ 
+    from the defaultCpuParameters in TestGroup.py.
+    """
+    changes = []
+
+    # Sort keys for consistent label ordering
+    for key in sorted(config.keys()):
+        val = config[key]
+        default_val = defaultCpuParameters.get(key)
+
+        # Compare strings (filename parsing yields strings, TestGroup defaults are strings)
+        if default_val is None or val != default_val:
+            # Strip '--' for cleaner plot labels
+            clean_name = key.lstrip('-')
+            changes.append(f"{clean_name}={val}")
+
+    if not changes:
+        return "Default Config"
+
+    return ", ".join(changes)
+
+
 def calculateParameterCost(cpuConfig: Dict[str, str]) -> int:
     total_cost = 0
 
@@ -208,9 +248,10 @@ def makePlotsForTestGroup(targetedWorkloads: List[str],
                           paramsByConfig: Dict[str, Dict[str, str]],
                           plotOut: str):
 
-    print("Generating plot data...")
+    print(f"Generating combined plot data for {plotOut}...")
     plot_data = []
 
+    # --- Data Processing ---
     for paramsString, workload_data in ipcAndCost.items():
         if not workload_data:
             continue
@@ -226,10 +267,8 @@ def makePlotsForTestGroup(targetedWorkloads: List[str],
         if targetedWorkloads:
             for wl in targetedWorkloads:
                 if wl in workload_data:
-                    # workload_data[wl] is (cost, ipc)
                     ipcs_targeted.append(workload_data[wl][1])
 
-        # If no targeted workloads found (or list empty), mean is 0
         gmean_ipc_targeted = geomMean(ipcs_targeted) if ipcs_targeted else 0.0
 
         plot_data.append({
@@ -242,98 +281,123 @@ def makePlotsForTestGroup(targetedWorkloads: List[str],
         })
 
     if not plot_data:
-        print("Warning: No plot data found! (Check if files were parsed correctly)")
+        print("Warning: No plot data found!")
         return
 
     # Sort data by Cost (ascending)
     plot_data.sort(key=lambda x: x["cost"])
 
-    # --- Generate Configuration Names and Write Text File ---
+    # --- Prepare Table Data ---
+    all_config_dicts = [paramsByConfig[d["original_params"]]
+                        for d in plot_data]
+
+    # Identify varying parameters
+    varying_keys = []
+    for key in AVAILABLE_PARAMS:
+        default_val = defaultCpuParameters.get(key)
+        is_varying = any(
+            cfg.get(key) != default_val for cfg in all_config_dicts)
+        if is_varying:
+            varying_keys.append(key)
+
+    # Prepare lists for the table
+    table_cell_text = []
+    table_row_labels = []
+    table_col_labels = ["Cost"] + [k.lstrip('-') for k in varying_keys]
 
     config_file_lines = []
 
     for idx, data_point in enumerate(plot_data):
-        config_num = idx + 1
-        cost = data_point["cost"]
-        new_label = f"Configuration {config_num} (Cost {cost})"
+        config_name = f"Config {idx + 1}"
+        data_point["label"] = config_name
 
-        # Update the label in the plot data
-        data_point["label"] = new_label
-
-        # Retrieve the detailed dictionary
+        # Text file details
         original_key = data_point["original_params"]
         param_details = paramsByConfig.get(original_key, {})
 
-        # Format for text file
-        config_file_lines.append(f"{new_label}:")
+        config_file_lines.append(f"{config_name} (Cost {data_point['cost']}):")
         for key in sorted(param_details.keys()):
             config_file_lines.append(f"    {key}: {param_details[key]}")
-        config_file_lines.append("")  # Empty line for spacing
+        config_file_lines.append("")
+
+        # Table Row
+        row_values = [str(data_point["cost"])]
+        for k in varying_keys:
+            row_values.append(param_details.get(k, "-"))
+
+        table_row_labels.append(config_name)
+        table_cell_text.append(row_values)
 
     # Save Configurations.txt
     with open(f"{plotOut}-Configurations.txt", "w") as f:
         f.write("\n".join(config_file_lines))
-    print("Saved configuration details to Configurations.txt")
 
-    # --- Plotting ---
+    # --- Plotting with GridSpec (Top: Plots, Bottom: Table) ---
 
     labels = [d["label"] for d in plot_data]
-
-    # Extract datasets
     ipc_all = [d["ipc_all"] for d in plot_data]
     ipc_targeted = [d["ipc_targeted"] for d in plot_data]
-
     eff_all = [d["efficiency_all"] for d in plot_data]
     eff_targeted = [d["efficiency_targeted"] for d in plot_data]
 
-    # Bar Chart Settings
-    bar_height = 0.35
     y_indices = range(len(labels))
-    # Offset bars: "All" goes slightly up (-), "Targeted" goes slightly down (+)
+    bar_height = 0.35
     y_pos_all = [y - bar_height/2 for y in y_indices]
     y_pos_targeted = [y + bar_height/2 for y in y_indices]
 
-    plot_path = Path(plotOut)
-    stem = plot_path.stem
-    suffix = plot_path.suffix
-    parent = plot_path.parent
+    # Initialize Figure
+    fig = plt.figure(figsize=(18, 9))
 
-    # 1. Plot IPC
-    plt.figure(figsize=(12, 10))  # Wider figure for legend
+    # Create Grid: 2 Rows, 2 Cols
+    # height_ratios=[4, 1]: Top row (plots) gets ~80% height, Bottom row (table) gets ~20%
+    # hspace=0.6: Increased space between the plots and the table
+    gs = fig.add_gridspec(2, 2, height_ratios=[4, 1], hspace=0.6, wspace=0.1)
 
-    plt.barh(y_pos_all, ipc_all, height=bar_height,
-             label='All Workloads', color='skyblue', edgecolor='black')
-    plt.barh(y_pos_targeted, ipc_targeted, height=bar_height,
-             label='Targeted Workloads', color='orange', edgecolor='black')
+    # --- Top Left: IPC Plot ---
+    ax_ipc = fig.add_subplot(gs[0, 0])
 
-    plt.yticks(y_indices, labels)
-    plt.xlabel('Geometric Mean IPC')
-    plt.title('Performance (IPC) by Configuration')
-    plt.legend()
-    plt.grid(axis='x', linestyle='--', alpha=0.7)
-    plt.tight_layout()
-    plt.savefig(plotOut)
-    print(f"Saved IPC plot to {plotOut}")
-    plt.close()
+    ax_ipc.barh(y_pos_all, ipc_all, height=bar_height,
+                label='All Workloads', color='skyblue', edgecolor='black')
+    ax_ipc.barh(y_pos_targeted, ipc_targeted, height=bar_height,
+                label='Targeted Workloads', color='orange', edgecolor='black')
 
-    # 2. Plot Efficiency (IPC / Cost)
-    cost_plot_filename = parent / f"{stem}_perCost{suffix}"
+    ax_ipc.set_yticks(y_indices)
+    ax_ipc.set_yticklabels(labels)
+    ax_ipc.set_xlabel('Geometric Mean IPC')
+    ax_ipc.legend(loc='lower right')
+    ax_ipc.grid(axis='x', linestyle='--', alpha=0.7)
+    ax_ipc.set_ylim(-0.5, len(labels) - 0.5)
 
-    plt.figure(figsize=(12, 10))
+    # --- Top Right: Efficiency Plot ---
+    ax_eff = fig.add_subplot(gs[0, 1], sharey=ax_ipc)
 
-    plt.barh(y_pos_all, eff_all, height=bar_height,
-             label='All Workloads', color='lightgreen', edgecolor='black')
-    plt.barh(y_pos_targeted, eff_targeted, height=bar_height,
-             label='Targeted Workloads', color='gold', edgecolor='black')
+    ax_eff.barh(y_pos_all, eff_all, height=bar_height,
+                label='All Workloads', color='lightgreen', edgecolor='black')
+    ax_eff.barh(y_pos_targeted, eff_targeted, height=bar_height,
+                label='Targeted Workloads', color='gold', edgecolor='black')
 
-    plt.yticks(y_indices, labels)
-    plt.xlabel('Efficiency (IPC / Cost)')
-    plt.title('Cost Efficiency by Configuration')
-    plt.legend()
-    plt.grid(axis='x', linestyle='--', alpha=0.7)
-    plt.tight_layout()
-    plt.savefig(cost_plot_filename)
-    print(f"Saved Efficiency plot to {cost_plot_filename}")
+    ax_eff.tick_params(axis='y', left=False, labelleft=False)
+    ax_eff.set_xlabel('Efficiency (IPC / Cost)')
+    ax_eff.legend(loc='lower right')
+    ax_eff.grid(axis='x', linestyle='--', alpha=0.7)
+
+    # --- Bottom: Table (Spanning Full Width) ---
+    ax_table = fig.add_subplot(gs[1, :])
+    ax_table.axis('off')
+
+    the_table = ax_table.table(cellText=table_cell_text,
+                               rowLabels=table_row_labels,
+                               colLabels=table_col_labels,
+                               loc='center',
+                               cellLoc='center')
+
+    the_table.auto_set_font_size(False)
+    the_table.set_fontsize(10)  # Reduced font size
+    the_table.scale(1, 1.5)    # Reduced row height scaling
+
+    # --- Save ---
+    plt.savefig(plotOut, bbox_inches='tight')
+    print(f"Saved combined plot to {plotOut}")
     plt.close()
 
 

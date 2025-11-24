@@ -1,4 +1,4 @@
-Configuration 1 (Cost 320):
+Config 1 (Cost 320):
     --commit_width: 1
     --decode_width: 1
     --dispatch_width: 1
@@ -13,7 +13,7 @@ Configuration 1 (Cost 320):
     --rename_width: 1
     --sq_entries: 4
 
-Configuration 2 (Cost 380):
+Config 2 (Cost 380):
     --commit_width: 1
     --decode_width: 1
     --dispatch_width: 1
@@ -28,7 +28,7 @@ Configuration 2 (Cost 380):
     --rename_width: 1
     --sq_entries: 4
 
-Configuration 3 (Cost 560):
+Config 3 (Cost 560):
     --commit_width: 1
     --decode_width: 1
     --dispatch_width: 1
