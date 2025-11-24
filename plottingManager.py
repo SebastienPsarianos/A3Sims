@@ -328,6 +328,10 @@ def makePlotsForTestGroup(targetedWorkloads: List[str],
         table_row_labels.append(config_name)
         table_cell_text.append(row_values)
 
+    # --- Directory Creation & Text Saving ---
+    # Ensure the directory exists (e.g. "../figures")
+    Path(plotOut).parent.mkdir(parents=True, exist_ok=True)
+
     # Save Configurations.txt
     with open(f"{plotOut}-Configurations.txt", "w") as f:
         f.write("\n".join(config_file_lines))
@@ -349,8 +353,6 @@ def makePlotsForTestGroup(targetedWorkloads: List[str],
     fig = plt.figure(figsize=(18, 9))
 
     # Create Grid: 2 Rows, 2 Cols
-    # height_ratios=[4, 1]: Top row (plots) gets ~80% height, Bottom row (table) gets ~20%
-    # hspace=0.6: Increased space between the plots and the table
     gs = fig.add_gridspec(2, 2, height_ratios=[4, 1], hspace=0.6, wspace=0.1)
 
     # --- Top Left: IPC Plot ---
@@ -392,8 +394,8 @@ def makePlotsForTestGroup(targetedWorkloads: List[str],
                                cellLoc='center')
 
     the_table.auto_set_font_size(False)
-    the_table.set_fontsize(10)  # Reduced font size
-    the_table.scale(1, 1.5)    # Reduced row height scaling
+    the_table.set_fontsize(10)
+    the_table.scale(1, 1.5)
 
     # --- Save ---
     plt.savefig(plotOut, bbox_inches='tight')
